@@ -1,0 +1,271 @@
+/* Note that all classes begin with a lowercase letter */
+
+html { font-size: 18px; }
+body { padding: 1rem; }
+
+/* Section One, Welcome */
+
+#section-one{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+    background-color: #88c6fc; 
+    
+}
+#Taqwa-image {
+    border-radius: 50%
+}
+.Welcome{
+    margin-top: 50px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Section Two, About Me */
+
+#section-two {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+#about-me {
+    width:600px ;
+    margin-top: 100px;
+    border-bottom: #88c6fc solid 3px;
+    padding: 10px;
+}
+
+.personal-information {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+#personal-information {
+    width: 290px;
+}
+
+/* Section Three, Skill and Experiences */
+
+#skill-experiences {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 30px;
+    gap: 50px;
+    justify-content: space-between;
+    border-top: #88c6fc solid 2px;
+    padding: 30px;
+    border-bottom: #88c6fc solid 2px;
+    
+}
+#skill {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.skill {
+    width: 40px;
+    height: 40px;
+}
+#experiences {
+    width: 300px;
+}
+
+/* Section Four, My Project */
+.my-project{
+    margin-top: 30px;
+    
+}
+#project {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+    gap: 50px;
+}
+.project {
+    width: 300px;
+    height: 300px;
+    box-shadow:  5px 5px 5px rgb(157, 160, 160);
+    
+}
+
+/* Section Five, My Services */
+
+.my-services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    gap: 100px;
+    border-top: #88c6fc solid 2px;
+    padding: 20px;
+}
+#services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+#origami-image {
+    height: 200px;
+    width: 130px;
+    border-radius: 10%;
+    box-shadow: 2px 5px 5px 5px rgb(118, 218, 218);
+}
+#knitting-wool-image{
+    height: 130px;
+    width: 200px;
+    border-radius: 10%;
+    box-shadow: 2px 5px 5px 5px rgb(118, 218, 218);
+}
+#Arabic-calligraphy-image{
+    height: 130px;
+    width: 220px;
+    border-radius: 10%;
+    box-shadow: 2px 5px 5px 5px rgb(118, 218, 218);
+}
+#pottery-painting-image{
+    height: 200px;
+    width: 120px;
+    border-radius: 10%;
+    box-shadow: 2px 5px 5px 5px rgb(118, 218, 218);
+}
+#Taqwa-third-image {
+    background-image: url(blue.png);
+}
+
+/* Section Six, Contact Me */
+
+.contact-me {
+    margin-top: 30px;
+    border-top:#88c6fc solid 3px;
+    padding: 20px;
+
+}
+
+#contact-me {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+}
+.link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Section Seven, Footer */
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
+    background-color: #b9defe;
+    padding: 60px;
+    gap: 20px;
+    
+}
+#type-note {
+    width: 200px;
+    
+}
+#send-note {
+    background-color: #88c6fc;
+    border: #67b4f7;
+}
+#key-strengths{
+    font-size: smaller;
+    font-weight: bold;
+}
+
+
+/* First Media */
+@media screen and (max-width:981px){
+     /* Section One, Welcome */
+     #section-one{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        background-color: #88c6fc; 
+        padding: 20px;
+    }
+
+    /* Section Two, About Me */
+    #section-two {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+    .personal-information {
+        display: grid;
+        grid-template-columns: auto auto  ;
+        gap: 20px;
+    
+    }
+    /* Section Four, My Project */
+    #project {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        gap: 50px;
+    }
+    
+    
+    /* Section Six, Contact Me */
+    #contact-me {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    
+
+}
+
+/* Second Media */
+@media screen and (max-width:740px){
+    /* Section One, Welcome */
+    #section-one{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        background-color: #88c6fc; 
+        padding: 20px;
+        
+    }
+    /* Section Two, About Me */
+    .personal-information {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    /* Section Three, Skill and Experiences */
+    #skill-experiences {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        gap: 50px;
+        justify-content: space-between;
+        border-top: #88c6fc solid 2px;
+        padding: 30px;
+        border-bottom: #88c6fc solid 2px;
+        
+    }
+
+}
